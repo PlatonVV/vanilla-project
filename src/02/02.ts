@@ -8,7 +8,7 @@ type HobbyType = {
   id: number;
   coding: string;
 };
-type StudentType = {
+export type StudentType = {
   id: number;
   name: string;
   age: number;
@@ -17,7 +17,7 @@ type StudentType = {
   hobby: Array<HobbyType>;
 };
 
-const students: StudentType = {
+export const students: StudentType = {
   id: 1,
   name: "Platon",
   age: 33,
