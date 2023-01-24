@@ -1,9 +1,17 @@
 import { students, StudentType } from "../02/02";
 
-export const sum = (a: number, b: number) => {
+export function sum(a: number, b: number) {
   return a + b;
-};
+}
 
-export const addSkill = (students: StudentType, skill: string) => {
-  students.hobby.push({ id: new Date().getTime(), coding: skill });
+export function addSkill(st: StudentType, skill: string) {
+  st.hobby.push({ id: new Date().getTime(), coding: skill });
+}
+
+export function makeStudentActive(s: StudentType) {
+  s.isActive = true;
+}
+
+export const doesStudentLiveInCity = (st: StudentType, cityName: string) => {
+  return st.address.city === cityName;
 };
